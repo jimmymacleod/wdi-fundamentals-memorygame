@@ -32,9 +32,10 @@ var checkForMatch = function() {
 };
 
 var flipCard = function() {
-  var cardId = document.this.getAttribute("data-id");
+  var cardId = document.cardElement.getAttribute("data-id");
+  // Made a mess of this.
   console.log("User flipped " + cards[cardId].rank);
-  document.this.setAttribute("src", cards[cardId].cardImage);
+  cardId.setAttribute("src", cards[cardId].cardImage);
   if (cardsInPlay.length === 2) {
     if (cardsInPlay[0] === cardsInPlay[1]) {
       alert("You found a match!");
