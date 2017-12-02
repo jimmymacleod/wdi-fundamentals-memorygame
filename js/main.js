@@ -54,10 +54,10 @@ var flipCard = function() {
 var createBoard = function() {
   for (i = 0; i < cards.length; i++) {
     var cardElement = document.createElement("IMG");
-    document.cardElement.setAttribute("src", "images/back.png");
-    document.cardElement.setAttribute("data-id", i);
-    document.addEventListener.cardElement("click", flipCard());
-    document.game - board.appendChild("img");
+    cardElement.setAttribute("src", "images/back.png");
+    cardElement.setAttribute("data-id", i);
+    cardElement.addEventListener("click", flipCard());
+    document.getElementById("game-board").appendChild(cardElement);
   }
 };
 
