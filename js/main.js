@@ -53,9 +53,9 @@ var flipCard = function() {
 
 var createBoard = function() {
   for (i = 0; i < cards.length; i++) {
-    var cardElement = document.createElement("img");
-    document.querySelector("img").setAttribute("src", "images/back.png");
-    document.querySelector("img").setAttribute("data-id", i);
+    var cardElement = document.createElement("IMG");
+    document.cardElement.setAttribute("src", "images/back.png");
+    document.cardElement.setAttribute("data-id", i);
     document.addEventListener.cardElement("click", flipCard());
     document.game - board.appendChild("img");
   }
